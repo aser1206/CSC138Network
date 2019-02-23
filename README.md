@@ -1,6 +1,1 @@
-CSC138Network
-CSC138 
-CSC138/HW1 
-CSC138/HW1 
-CSC138 
-CSC138 
+CSC138 Book and homework
