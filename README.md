@@ -1,1 +1,1 @@
-CSC138 Book and homework
+CSC138 Slides and homework
