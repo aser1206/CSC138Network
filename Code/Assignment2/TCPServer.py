@@ -11,14 +11,12 @@ serverSocket.bind(("", serverPort))
 serverSocket.listen(1)
 
 while True:
-
 	#Establish the connection
 	print 'Server running and ready to recieve...'
 	connectionSocket, addr = serverSocket.accept()
 
 	try:
 		message =  connectionSocket.recv(1024)
-
 		filename = message.split()[1]
 		f = open(filename[1:])
 		outputdata = f.read()
@@ -32,7 +30,6 @@ while True:
 		connectionSocket.send("\r\n")
 
 		connectionSocket.close()
-
 	except IOError:
 		# Send HTTP response message for file not found
 		connectionSocket.send("HTTP/1.1 404 Not Found\r\n\r\n")
